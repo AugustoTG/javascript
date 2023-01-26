@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // .lenght -> conta a quantidade de letras
+        // .toUpperCase() -> tudo para maiúsculo
+        // .toLowerCase() -> tudo para minúsculo
+        var name = window.prompt('qual seu nome?')
+        document.write(`Olá ${name}! seu nome tem ${name.length}<br>`)
+        document.write(`Seu nome em maiúsculo é ${name.toUpperCase()}, em minúsculo fica ${name.toLowerCase()}! <br>`)
+        //.toFixed() -> fixa a quantidade de casas apos o . ex toFixed(2) duas casas
+        // .replace('.',',') para trocar ponto por virgula
+        var n1 = Number(window.prompt('Informe um número'))
+        document.write(`Olá seu número com duas casas${n1.toFixed(2).replace('.',',')}<br>`)
+        // .toLocaleString('pt-BR',{style: 'currency', currency: 'EUR'}) para mostrar formato dinheiro
+        var n2 = Number(window.prompt('Informe seu salário'))
+        document.write(`Olá seu salario é: ${n2.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}`)
+        
+    </script>
+</body>
+</html>
