@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(155, 171, 190);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique em mim!</div>
+    <div name="msg2">Clique em mim!</div>
+    <div class="msg3">Clique em mim!</div>
+    <script>
+         window.document.write(window.document.charset)
+         window.document.write(window.document.URL)
+
+        /*Em JS podemos selecionar qualquer elemento da arvore DOM 
+        Tipos de acesso:*/
+       /* Por marca -> getElementsByTagName()*/
+       var corpo = document.body
+       var p1 = window.document.getElementsByTagName('p')[1]/* [0]seleciona o primeiro paragrafo para selecionar o proximo coloca-se [1] e a assim sucessivamente*/ 
+       window.document.write('Esta escrito assim ' + p1.innerText)// + -> concatenado /  .innerText -> texto dentro do paragrafo
+       // o window. não tem necessidade de utilizar
+       p1.style.color='white'
+        /*corpo.style.background = 'yellow'*/
+        window.alert(p1.innerHTML) // mostra todos 
+
+        // por ID : getElementById()
+        var identidade = window.document.getElementById('msg')
+        identidade.style.background = 'green'
+        identidade.innerText = ('Estou aguardando!')
+        /* window.document.getElementById('msg').innerText = ('Estou aguardando!')*/
+
+        // por Name : getElementsByName()[]
+        var nome = window.document.getElementsByName('msg2')[0]
+        nome.style.background = 'red'
+        // por class : getElementsByClass()[]
+        var classe = document.getElementsByClassName('msg3')[0]
+        classe.style.background = 'yellow'
+
+        // por seletor :  querySelector()
+        //                querySelectorAll() 
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'white'
+        var c = window.document.querySelector('div.msg3')
+        c.innerText = ('Não Acredito!')
+        var a = window.document.querySelector('h1')
+        a.innerText = ('Algo mudou!')
+    </script>
 </body>
 </html>
