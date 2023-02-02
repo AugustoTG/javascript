@@ -5,11 +5,29 @@
     margin: 0;
     padding: 0;
     font-family: 'Outfit', arial, sans-serif;
+    font-variant: small-caps;
 }
 body{
     text-align: center;
-    background-color: aqua;
+    background-color: rgba(59, 59, 59, 0.712);
+    color:#fff;
 }
-.hora{
-    
+h1{
+    margin: 10px 0 40px 0;
+}
+.conteiner{
+    position: relative;
+}
+#conteudo{
+    height: 300px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(58, 57, 57, 0.671) 1px 1px 3px 2px;
+    color:#000;
+    position: absolute;
+    left: 25%;
+}
+footer{
+    margin-top: 40px;
 }
