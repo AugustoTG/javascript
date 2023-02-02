@@ -1,4 +1,5 @@
-let hora = 15
+let agora = new Date()
+let hora = agora.getHours()
 console.log(`Agora são ${hora} horas!`)
 if (hora >6 && hora < 12){
     console.log('Periodo da manhã!')
