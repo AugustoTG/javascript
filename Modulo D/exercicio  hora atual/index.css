@@ -31,7 +31,6 @@ h1{
 #foto {
     height: 150px;
     width: 150px;
-    v
     border-radius: 50%;
     position: absolute;
     right: 25%;
@@ -41,4 +40,13 @@ h1{
 footer{
     margin-top: 40px;
     font-weight: 300;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+}
+a:hover{
+    color:darkred;
+    text-decoration: underline;
 }
