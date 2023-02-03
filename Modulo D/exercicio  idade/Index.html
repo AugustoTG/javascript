@@ -9,16 +9,25 @@
 </head>
 <body>
     <header>
-        <h1>Hora</h1>
+        <h1>Verificador de Idade.</h1>
     </header>
     <main>
-        <div id="hora">
-            <p>Agora são</p>
-            <div id="foto"></div>
-        </div>
+        <form action="#" id="pesquisa">    
+            <div id="data">
+                <label for="ano">Ano de Nascimento: </label><input type="date" name="ano" id="ano">
+            </div>
+            <div id="sex">
+                <label>Sexo: </label><input type="radio"  name="sexom" id="sexom"><label for="sexom"> Masculino</label> <input type="radio" name="sexof" id="sexof"><label for="sexof"> Feminino</label>
+            </div>
+            <div id="verif">
+                <input type="button" value="Verificar">
+            </div>
+            <p>Preencha os dados acima para ver o sesultado!</p>
+        </form>
+        
     </main>
     <footer>
-        <p>Criado por <a href="https://github.com/AugustoTG" target="_blank">Augusto Tavares</a> para &copy; Curso em video</p>
+        <p>Criado por <a href="https://github.com/AugustoTG" target="_blank">Augusto Tavares</a> para &copy; <em>Curso em video</em></p>
     </footer>
     <script src="index.js"></script>
 </body>
