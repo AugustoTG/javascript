@@ -27,7 +27,7 @@ h1{
     margin: auto;
     font-weight: 600;
 }
-#data, #sex, #verif{
+#data, #sex, #verif, #resultado{
     margin: 10px;
 }
 footer{
