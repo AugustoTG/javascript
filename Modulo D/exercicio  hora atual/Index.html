@@ -7,15 +7,17 @@
     <title>Hora atual</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
-        <h1>Hora</h1>
+        <h1>Hora do dia.</h1>
     </header>
     <main>
         <div id="hora">
             <h2>Agora são</h2>
         </div>
-        <div id="foto"><img src="img/manha.png" alt=""></div>
+        <div id="foto">
+            <img id="img" src="imagem/manha.png" alt="foto da manha">
+        </div>
     </main>
     <footer>
         <p>Criado por <a href="https://github.com/AugustoTG" target="_blank">Augusto Tavares</a> para &copy; Curso em video</p>
