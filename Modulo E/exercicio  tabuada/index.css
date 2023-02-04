@@ -26,7 +26,7 @@ h1{
     margin: auto;
     font-weight: 600;
 }
-#var1, #var2, #var3, #verif, #resultado{
+#var1, #sel{
     margin: 10px;
 }
 #resultado{
