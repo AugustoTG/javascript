@@ -1,5 +1,5 @@
 let num = [9,17,1,285]
-num[2] = 6
+num[3] = 6
 num.push(100)
 num.sort()
 console.log(num)
