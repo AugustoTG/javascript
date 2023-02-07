@@ -17,7 +17,7 @@ h1{
     font-weight: 900;
 }
 #pesquisa{
-    width: 400px;
+    width: 420px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: rgba(58, 57, 57, 0.671) 1px 1px 3px 2px;
@@ -27,6 +27,10 @@ h1{
     font-weight: 600;
 }
 #var1, #sel{
+    margin: 10px;
+}
+#fim{
+    display: block;
     margin: 10px;
 }
 #resultado{
