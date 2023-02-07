@@ -26,12 +26,15 @@ h1{
     margin: auto;
     font-weight: 600;
 }
-#var1, #sel{
+#var1, #sel, #res{
     margin: 10px;
 }
 #fim{
     display: block;
     margin: 10px;
+}
+#sel{
+    width: 165px;
 }
 #resultado{
     padding: 1px;
