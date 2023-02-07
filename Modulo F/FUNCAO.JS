@@ -5,5 +5,6 @@ function parimp(n){
         return 'Impar!'
     }
 } 
-let res = parimp(9)
- console.log(res)
+//let res = parimp(9)
+// console.log(res)
+console.log(parimp(6716821))
